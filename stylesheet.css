@@ -1,0 +1,121 @@
+body {
+    background-color: var(--bg-color);
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --green-color :hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+    --bg-color:hsl(0, 0%, 8%);
+    --container-color:hsl(0, 0%, 12%); 
+    --buttons-color:hsl(0, 0%, 20%);
+}
+
+.container {
+    background-color: var(--container-color);
+    width: 350px;
+    height: 510px;
+    margin: 50px auto;
+    border-radius: 12px;
+    position: relative;
+}
+
+.container .girl {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 36px;
+    margin-left: 136px;
+}
+
+.container .name {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 17px;
+    margin-left: 104px;
+}
+
+.container .address {
+    color: var(--green-color);
+    font-weight:600;
+    font-size: 10px;
+    margin-top: -5px;
+    margin-left: 107px;
+}
+
+.container .role {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 23px;
+    margin-left: 74px;
+}
+
+.container a {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 37px;
+    background-color: var(--buttons-color);
+    border-radius: 6px;
+    margin: 22px 49px -7px;
+    color: var(--white-color);
+    font-size: 11px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container a:hover {
+    background-color: var(--green-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+::selection {
+    background-color: var(--green-color);
+    color: var(--bg-color);
+}
+
+
+@media (max-width:375px){
+    .container {
+        width: 250px;
+        height: 485px;
+    }
+
+    .container .girl {
+        margin-top: 25px;
+        margin-left: 92px;
+    }
+
+
+    .container .name {
+        margin-left: 63px;
+    }
+    
+    .container .address {
+        margin-left: 67px;
+    }
+    
+    .container .role {
+        margin-left: 39px;
+        font-size: 10px;
+    }
+    
+    .container a {
+        width: 215px;
+        margin-left: 17px;
+    }
+}
+
+
+.attribution{
+    color:var(--white-color);
+}
+
+.attribution a {
+    color:  var(--green-color);
+}

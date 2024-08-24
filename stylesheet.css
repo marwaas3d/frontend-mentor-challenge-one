@@ -15,7 +15,7 @@ body {
     background-color: var(--container-color);
     width: 350px;
     height: 510px;
-    margin: 50px auto;
+    margin: 89px auto 58px;
     border-radius: 12px;
     position: relative;
 }
